@@ -15,7 +15,7 @@ async def create_archive(input_directory):
     return_name = None
     if os.path.exists(input_directory):
         base_dir_name = os.path.basename(input_directory)
-        compressed_file_name = f"{base_dir_name}.tar.gz"
+        compressed_file_name = f"{base_dir_name}.zip"
         # #BlameTelegram
         suffix_extention_length = 1 + 3 + 1 + 2
         if len(base_dir_name) > (64 - suffix_extention_length):
