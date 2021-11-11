@@ -15,6 +15,7 @@ async def create_archive(input_directory):
     return_name = None
     if os.path.exists(input_directory):
         base_dir_name = os.path.basename(input_directory)
+        base_dir_name = "c2ptech.com_"+base_dir_name
         compressed_file_name = f"{base_dir_name}.zip"
         # #BlameTelegram
         suffix_extention_length = 1 + 3 + 1 + 2
