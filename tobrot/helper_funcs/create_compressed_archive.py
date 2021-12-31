@@ -24,9 +24,9 @@ async def create_archive(input_directory):
             compressed_file_name += ".zip"
         # fix for https://t.me/c/1434259219/13344
         file_genertor_command = [
-            "rar",
-            "-a",
-            "-m0",
+            "7z",
+            "a",
+            "-mx=0",
             compressed_file_name,
             f"{input_directory}",
         ]
